@@ -107,4 +107,5 @@ li {
 
 .single-column-people > li {
   width: 100%;
+  margin-bottom: 0;
 }
