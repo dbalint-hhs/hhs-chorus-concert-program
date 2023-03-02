@@ -102,10 +102,11 @@ li {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+  
 }
 
 .single-column-people > li {
   width: 100%;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
 }
