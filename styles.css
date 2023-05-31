@@ -1,17 +1,29 @@
 * {
   box-sizing: border-box;
   color: white;
+  overflow-x:hidden;
 }
+
 
 body {
   display: grid;
   justify-content: center;
-  background-color: #188c27;
+  width: 100vw;
+  background-color: black;
+}
+
+#wrapper {
+  display: grid;
+  justify-items: center;
+  background-color: white;
   text-align: center;
+  width: 98%;
+
 }
 
 .section {
   background-color: black;
+  width: 99%;
   border-radius: 1rem;
   margin: .5vw 0 2vw 0;
   padding: 0 2vw 2vw 2vw;
@@ -26,13 +38,18 @@ h1 {
 }
 
 h2 {
-  font-size: 9vw;
+  font-size: 10vw;
   text-decoration: underline;
 }
 
 
 h3 {
   font-size: 7vw;
+}
+
+h4 {
+  font-size: 9vw;
+  margin-bottom: 0;
 }
 
 a {
@@ -42,6 +59,11 @@ a {
 p {
   font-size: 5vw;
   line-height: 1.8;
+}
+
+.artists {
+  font-size: 4vw;
+  margin-top: 0;
 }
 
 img {
@@ -96,7 +118,9 @@ li {
   width: 50%;
 }
 
-.single-column-people {
+
+
+.single-column-titles {
   text-align:center;
   width: 100%;
   display: inline-flex;
@@ -106,6 +130,35 @@ li {
   
 }
 
+.single-column-titles > li {
+  width: 100%;
+  margin-bottom:  1rem;
+  margin-top: 5rem;
+  font-size: 4.5rem;
+}
+
+.soloist {
+  text-align:center;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.soloist > li {
+  width: 100%;
+  margin-top: 0;
+  font-size: 2.75rem
+}
+
+.single-column-people {
+  text-align:center;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  
+}
 .single-column-people > li {
   width: 100%;
   margin-bottom: 4rem;
