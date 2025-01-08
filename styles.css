@@ -5,16 +5,18 @@
 
 body {
   display: grid;
-  justify-content: center;
+  justify-items: center;
   background-color: #188c27;
-  text-align: center;
+  
 }
 
 .section {
   background-color: black;
   border-radius: 1rem;
-  margin: .5vw 0 2vw 0;
+  margin: .2vw 0 1.5vw 0;
   padding: 0 2vw 2vw 2vw;
+  width: 99%;
+  text-align: center;
 }
 
 h1 {
@@ -103,6 +105,7 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1rem;
+  font-size: 1rem;
   
 }
 
