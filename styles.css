@@ -208,3 +208,7 @@ li {
   margin-bottom: 1rem;
   font-size: clamp(.6rem, 5vw, .85rem);
 }
+
+#tribute {
+  margin-top: 0;
+}
