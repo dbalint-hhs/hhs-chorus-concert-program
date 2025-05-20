@@ -1,26 +1,44 @@
 * {
   box-sizing: border-box;
   color: white;
+  overflow-x:hidden;
+}
+
+html {
+  font-family: system-ui, sans-serif;
+  background:#000;
+  display:grid;
+  justify-content: center;
 }
 
 body {
   display: grid;
+  justify-content: center;
+  margin: 0;
+  /* max-width:42rem; */
+  background-color: black;
+}
+
+#wrapper {
+  display: grid;
   justify-items: center;
-  background-color: #188c27;
-  
+  width: min(100%, 32rem);
+  margin: auto;
+  background-color: white;
+  text-align: center;
+
 }
 
 .section {
   background-color: black;
-  border-radius: 1rem;
-  margin: .2vw 0 1.5vw 0;
-  padding: 0 2vw 2vw 2vw;
   width: 99%;
-  text-align: center;
+  border-radius: 1rem;
+  margin: .5rem 0 .1rem 0;
+  padding: 0 .5rem .5rem .5rem;
 }
 
 h1 {
-  font-size: 10vw;
+  font-size:clamp(2.25rem, 9vw, 3.5rem);
 }
 
 #title {
@@ -28,13 +46,20 @@ h1 {
 }
 
 h2 {
-  font-size: 9vw;
+  font-size:clamp(1.5rem, 7vw, 1.5rem);
   text-decoration: underline;
 }
 
 
 h3 {
-  font-size: 7vw;
+  font-size: clamp(1.25rem, 5vw, 2rem);
+  margin-top: 1rem;
+}
+
+h4 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 a {
@@ -42,8 +67,14 @@ a {
 }
 
 p {
-  font-size: 5vw;
+  font-size: clamp(1rem, 5vw, 1.125rem);
   line-height: 1.8;
+}
+
+.artists {
+  font-size: clamp(.6rem, 5vw, .8rem);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 img {
@@ -72,7 +103,7 @@ ul {
 
 li {
   list-style-type: none;
-  font-size: 4vw;
+  font-size: clamp(1rem, 4vw, 1.125rem);
   margin-bottom: 3rem;
 }
 
@@ -90,15 +121,18 @@ li {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .people-list > li {
   padding: 0 1rem 0 1rem;
   width: 50%;
+  margin-bottom: 1rem;
 }
 
-.single-column-people {
+
+
+.single-column-titles {
   text-align:center;
   width: 100%;
   display: inline-flex;
@@ -109,7 +143,68 @@ li {
   
 }
 
+.single-column-titles > li {
+  width: 100%;
+  margin-bottom:  .1rem;
+  margin-top: 1.8rem;
+  font-size: clamp(1.3rem, 5vw, 1.8rem);
+}
+
+.soloist {
+  text-align:center;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.soloist > li {
+  width: 100%;
+  margin-top: 0;
+  font-size: clamp(.8rem, 4vw, 1rem);
+  margin-bottom: 0;
+
+}
+
+.instrumentalist {
+  text-align:center;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.instrumentalist > li {
+  width: 100%;
+  margin-top: 0;
+  font-size: clamp(1rem, 4vw, 1.125rem);
+  margin-bottom: .5rem;
+}
+
+.single-column-people {
+  text-align:center;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  
+}
 .single-column-people > li {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+}
+
+.accolades {
+  text-align:center;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  
+}
+.accolades > li {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: clamp(.6rem, 5vw, .85rem);
 }
