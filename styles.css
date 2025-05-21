@@ -31,9 +31,8 @@ body {
 
 .section {
   background-color: black;
-  width: 99%;
   border-radius: 1rem;
-  margin: .5rem 0 .1rem 0;
+  margin: .2rem .2rem .1rem .2rem;
   padding: 0 .5rem .5rem .5rem;
 }
 
@@ -46,7 +45,7 @@ h1 {
 }
 
 h2 {
-  font-size:clamp(1.5rem, 7vw, 1.5rem);
+  font-size:clamp(1.5rem, 7vw, 2.5rem);
   text-decoration: underline;
 }
 
@@ -57,7 +56,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 2.2rem);
   margin-top: 2rem;
   margin-bottom: 0;
 }
@@ -147,7 +146,7 @@ li {
   width: 100%;
   margin-bottom:  .1rem;
   margin-top: 1.8rem;
-  font-size: clamp(1.3rem, 5vw, 1.8rem);
+  font-size: clamp(1.3rem, 5vw, 1.5rem);
 }
 
 .soloist {
@@ -159,7 +158,7 @@ li {
 }
 .soloist > li {
   width: 100%;
-  margin-top: 0;
+  margin-top: .2rem;
   font-size: clamp(.8rem, 4vw, 1rem);
   margin-bottom: 0;
 
@@ -211,4 +210,5 @@ li {
 
 #tribute {
   margin-top: 0;
+  font-size: clamp(.8rem, 5vw, 1.1rem);
 }
